@@ -12,7 +12,6 @@ namespace PHPUnit\Util\TestDox;
 use function array_filter;
 use function get_class;
 use function implode;
-use function strpos;
 use DOMDocument;
 use DOMElement;
 use PHPUnit\Framework\AssertionFailedError;
@@ -159,8 +158,9 @@ final class XmlResultPrinter extends Printer implements TestListener
 
         $groups = array_filter(
             $test->getGroups(),
-            static function ($group) {
-                return !($group === 'small' || $group === 'medium' || $group === 'large' || strpos($group, '__phpunit_') === 0);
+            static function ($group)
+            {
+                return !($group === 'small' || $group === 'medium' || $group === 'large');
             }
         );
 

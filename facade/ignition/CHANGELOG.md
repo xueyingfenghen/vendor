@@ -2,10 +2,9 @@
 
 All notable changes to `ignition` will be documented in this file
 
-## 2.5.0 - 2020-10-27
+## 2.4.2 - 2021-03-08
 
-- add PHP 8.0-dev support
-- remove unnecessary `scrivo/highlight.php` dependency
+- fix `MakeViewVariableOptionalSolution` to disallow stream wrappers and files that do not end in .blade.php (#356)
 
 ## 2.4.1 - 2020-10-14
 
@@ -22,7 +21,7 @@ All notable changes to `ignition` will be documented in this file
 ## 2.3.7 - 2020-09-06
 
 - add loading state on share button (#309)
-- compatibility fix for L8
+- compatiblity fix for L8
 
 ## 2.3.6 - 2020-08-10
 
